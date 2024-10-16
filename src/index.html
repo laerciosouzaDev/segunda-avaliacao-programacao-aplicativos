@@ -3,10 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>concessionaria Senai</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <div class="container">
+    <h1>Concessionaria TJ</h1>
+    
+    <!-- Formulário de Cadastro -->
+    <div class="formulario-container">
+        <h2>Cadastrar Veículos</h2>
+        <form id="formularioVeiculo">
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" required>
+
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" name="modelo" required>
+
+            <label for="ano">Ano:</label>
+            <input type="number" id="ano" name="ano" required>
+
+            <label for="img">Foto:</label>
+            <input type="image" id="img" name="img" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <!-- Listagem de Veículos -->
+    <div class="list-container">
+        <h2>Lista de Veículos</h2>
+        <ul id="listaVeiculo"></ul>
+    </div>
+</div>
+
+  </div>
   
   <script src="script.js"></script>
 </body>
